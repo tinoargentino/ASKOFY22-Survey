@@ -398,7 +398,7 @@ def generate_message(messagebody,messagetype,Hash):
         		{
         			"hint": {
         				"type": "plain_text",
-        				"text": "Eg: Tell us what did you think of the content, the interactive tools, the length of the sessions, or whatever you feel like!",
+        				"text": "Eg: Tell us your thoughts about the content, the interactive tools, the length of the sessions, or whatever you feel could be improved!",
         				"emoji": True
         			},
         			"type": "input",
