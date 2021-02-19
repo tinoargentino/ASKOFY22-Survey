@@ -391,14 +391,14 @@ def generate_message(messagebody,messagetype,Hash):
         			"type": "header",
         			"text": {
         				"type": "plain_text",
-        				"text": "ASKOFY22 Suggestion Box",
+        				"text": "ASKO FY22 Suggestion Box",
         				"emoji": True
         			}
         		},
         		{
         			"hint": {
         				"type": "plain_text",
-        				"text": "Eg: tell us what did you think of the content, the interactive tools, the length of the sessions, or whatever you feel like!",
+        				"text": "Eg: Tell us what did you think of the content, the interactive tools, the length of the sessions, or whatever you feel like!",
         				"emoji": True
         			},
         			"type": "input",
