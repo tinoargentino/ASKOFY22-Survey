@@ -101,7 +101,7 @@ def lambda_handler(event, context):
 
         ReceiverListSheet=sh.worksheet("Receiver List")
         Receivers = ReceiverListSheet.get_all_values()
-        print(Receivers)
+        #print(Receivers)
         Hash=str(hash(str(tm.time())+messagebody))
         ts=tm.ctime()
         #Write Hash of event name in Google Sheet to keep track of responses
