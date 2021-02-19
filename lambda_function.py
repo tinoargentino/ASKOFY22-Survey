@@ -247,7 +247,7 @@ def generate_message(messagebody,messagetype,Hash):
               "type": "section",
               "text": {
                 "type": "plain_text",
-                "text": "Thank you for attending today's " + messagebody + "! How likely are you to recommend this content to your colleagues?",
+                "text": "Thank you for attending today's " + messagebody + "! How would you rate your experience?",
                 "emoji": True
               }
             },
