@@ -1,8 +1,6 @@
-# SlackSurvey
+# ASKOFY22 SlackSurvey
 Sends a Slack Survey to a list of users
 The user list comes from the provided G-Sheet and the results are also dumped there
-
-Spreadsheet:https://docs.google.com/spreadsheets/d/16aptHEARz_1HCL1pJ_Rx6uW-oTBLSpOFtfIlgJrSXwI/edit?usp=sharing
 
 The Spreadsheet includes a script that is to be set to run periodically so that it always has the latest list of Slack User IDs to match to the emails.
 
