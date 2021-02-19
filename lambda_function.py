@@ -391,14 +391,14 @@ def generate_message(messagebody,messagetype,Hash):
         			"type": "header",
         			"text": {
         				"type": "plain_text",
-        				"text": "EP Suggestion Box",
+        				"text": "ASKOFY22 Suggestion Box",
         				"emoji": True
         			}
         		},
         		{
         			"hint": {
         				"type": "plain_text",
-        				"text": "Eg: Feedback on E&P material such as FBP Calls, Onboarding Foundations, Lyearn courses, Fortis, Sales Huddles, Data reporting, In The Loop newsletter, etc",
+        				"text": "Eg: tell us what did you think of the content, the interactive tools, the length of the sessions, or whatever you feel like!",
         				"emoji": True
         			},
         			"type": "input",
