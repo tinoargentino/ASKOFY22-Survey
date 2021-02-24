@@ -103,7 +103,7 @@ def lambda_handler(event, context):
         Receivers = ReceiverListSheet.get_all_values()
         
         # testing environment
-        print(Receivers)
+        # print(Receivers)
         # end testing environment
 
 
@@ -124,7 +124,6 @@ def lambda_handler(event, context):
         for receiver in Receivers[1:]:
             if receiver[2]!='' and receiver[2]!='Not Found':
                 try:
-                    print("starting send")
                     response = client.chat_postMessage(channel=receiver[2],blocks=generate_message(messagebody,messagetype,Hash))
                     # testing environment
                     ok+=1
@@ -136,7 +135,7 @@ def lambda_handler(event, context):
                     # end testing environment
                     # pass
         # testing environment
-        print(ok)
+        print("sent to " + ok + " receipients.")
         # end testing environment
 
     #Slack challenge
@@ -184,7 +183,7 @@ def lambda_handler(event, context):
         Responses.append_row(row)
         
         # testing environment
-        print(row)
+        # print(row)
         # end testing environment
 
 
