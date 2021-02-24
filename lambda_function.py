@@ -125,7 +125,8 @@ def lambda_handler(event, context):
                 try:
                     response = client.chat_postMessage(channel=receiver[2],blocks=generate_message(messagebody,messagetype,Hash))
                 except Exception as e:
-                    pass
+                    print(receive + "not available")
+                    # pass
 
     #Slack challenge
     elif menuoption==2:
