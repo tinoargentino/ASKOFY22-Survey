@@ -120,13 +120,23 @@ def lambda_handler(event, context):
 
 
         #Send survey to each user
+        ok=0
         for receiver in Receivers[1:]:
             if receiver[2]!='' and receiver[2]!='Not Found':
                 try:
                     response = client.chat_postMessage(channel=receiver[2],blocks=generate_message(messagebody,messagetype,Hash))
+                    # testing environment
+                    ok+=1
+                    # print(receiver + "ok")
+                    # end testing environment
                 except Exception as e:
-                    print(receive + "not available")
+                    # testing environment
+                    print(receiver + "not available")
+                    # end testing environment
                     # pass
+        # testing environment
+        print(ok)
+        # end testing environment
 
     #Slack challenge
     elif menuoption==2:
