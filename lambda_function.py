@@ -128,11 +128,11 @@ def lambda_handler(event, context):
                     response = client.chat_postMessage(channel=receiver[2],blocks=generate_message(messagebody,messagetype,Hash))
                     # testing environment
                     ok+=1
-                    print(receiver + "ok")
+                    print(receiver[0] + " ok")
                     # end testing environment
                 except Exception as e:
                     # testing environment
-                    print(receiver + "not available")
+                    print(receiver[0] + " not available")
                     # end testing environment
                     # pass
         # testing environment
