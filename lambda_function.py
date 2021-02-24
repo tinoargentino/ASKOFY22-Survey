@@ -101,7 +101,12 @@ def lambda_handler(event, context):
 
         ReceiverListSheet=sh.worksheet("Receiver List")
         Receivers = ReceiverListSheet.get_all_values()
-        #print(Receivers)
+        
+        # testing environment
+        print(Receivers)
+        # end testing environment
+
+
         Hash=str(hash(str(tm.time())+messagebody))
         ts=tm.ctime()
         #Write Hash of event name in Google Sheet to keep track of responses
@@ -165,6 +170,11 @@ def lambda_handler(event, context):
 
         row = [id, username, name, time, selection]
         Responses.append_row(row)
+        
+        # testing environment
+        print(row)
+        # end testing environment
+
 
     #Process Modal
     elif menuoption==5:
