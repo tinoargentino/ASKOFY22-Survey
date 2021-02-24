@@ -124,7 +124,7 @@ def lambda_handler(event, context):
         for receiver in Receivers[1:]:
             if receiver[2]!='' and receiver[2]!='Not Found':
                 try:
-                    print('starting send")
+                    print("starting send")
                     response = client.chat_postMessage(channel=receiver[2],blocks=generate_message(messagebody,messagetype,Hash))
                     # testing environment
                     ok+=1
